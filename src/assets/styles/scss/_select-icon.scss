@@ -1,0 +1,63 @@
+.selectIcon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &--table {
+    vertical-align: bottom;
+    margin-left: 4px;
+  }
+
+  &__top, &__bottom {
+    position: absolute;
+    font-size: 16px;
+  }
+
+  &__top {
+    top: -4px;
+  }
+
+  &__bottom {
+    bottom: -4px;
+  }
+
+  &--dropdown {
+    margin-right: 10px;
+
+    .selectIcon__top, .selectIcon__bottom {
+      color: $pi_gray_darker;
+    }
+  }
+
+  &--down {
+
+    .selectIcon__top {
+      color: $pi_gray_lighter;
+    }
+
+    .selectIcon__bottom {
+      color: $pi_gray_darkest;
+    }
+  }
+
+  &--up {
+
+    .selectIcon__top, .selectIcon__bottom {
+      color: $pi_gray_lighter;
+    }
+  }
+
+  &--inactive {
+
+    .selectIcon__top {
+      color: $pi_gray_dark;
+    }
+
+    .selectIcon__bottom {
+      color: $pi_gray_dark;
+    }
+  }
+}

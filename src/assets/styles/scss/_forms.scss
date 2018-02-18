@@ -1,0 +1,95 @@
+label {
+  font-family: $base-font-family;
+  font-size: 14px;
+  line-height: 1.43;
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 200px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: $pl_white;
+  border: solid 1px $pi_gray_light;
+  padding: 8px 8px 8px 9px;
+  font-family: $base-font-family;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    border-color: $pi_gray_darker;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pi_gray_darker;
+  }
+
+  &:disabled {
+    color: $pi_gray_darker;
+    border-color: $pi_gray_light;
+    background-color: $pi_gray_lighter;
+  }
+
+  &:invalid {
+    border-color: $pi_danger;
+  }
+}
+
+.formValidationError {
+  font-family: $base-font-family;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.82;
+  color: $pi_danger;
+  margin-top: 2px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: $pl_white;
+  border: solid 1px $pi_gray_light;
+  position: relative;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    border-width: 2px;
+    border-color: #006edb;
+  }
+
+  &:checked {
+    border-color: #006edb;
+    background: url("../../assets/img/icons/ic-checkbox-blue.svg") no-repeat;
+    background-position: center center;
+  }
+
+  &:disabled {
+    border-color: $pi_gray_lighter;
+    background-color: $pl_gray_lightest;
+
+    &:checked {
+      background: url("../../assets/img/icons/ic-checkbox-gray.svg") no-repeat;
+      background-position: center center;
+      border-color: $pi_gray_lighter;
+      background-color: $pl_gray_lightest;
+    }
+  }
+}
+
+.label--checkbox {
+  display: inline-block;
+  margin: 0;
+  vertical-align: bottom;
+  padding-left: 10px;
+  cursor: pointer;
+}
