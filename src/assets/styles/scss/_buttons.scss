@@ -1,0 +1,99 @@
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button {
+  border-radius: 3px;
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  padding: 8px 17px;
+  transition: all .2s ease-in-out;
+
+  &--primary {
+    color: $pl_white;
+    background-color: $pl_primary;
+    border: 0;
+    font-weight: $regular;
+
+    &:hover {
+      background-color: #087bee;
+    }
+
+    &:active {
+      background-color: #0060c0;
+    }
+
+    &:disabled {
+      background-color: #c3d4e6;
+    }
+  }
+
+  &--default {
+    color: $pi_gray_darkest;
+    background-color: $pl_white;
+    border: solid 1px $pi_gray_light;
+    box-shadow: 2px 4px 8px 0 rgba(0, 19, 56, 0.1);
+
+    &:hover {
+      color: $pi_black;
+      border-color: $pi_gray_darker;
+    }
+
+    &:active {
+      color: $pi_gray_darkest;
+      border-color: $pi_gray_lighter;
+      background-color: $pl_gray_lightest;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      color: $pi_gray_darker;
+      border-color: transparent;
+      background-color: $pi_gray_lighter;
+      box-shadow: none;
+    }
+  }
+
+  &--addPlant {
+    background-color: #c3d4e6;
+    color: $pl_white;
+  }
+
+  &--wearParts {
+    float: right;
+    margin-right: 10px;
+    padding: 7px 17px;
+  }
+
+  &--addNewSection {
+    background-color: $pi_gray_lighter;
+    color: $pi_gray_darker;
+    padding: 8px 21px 8px 18px;
+  }
+
+  &--last24hours {
+    background-color: $pl_gray_lightest;
+    color: $pi_gray_darker;
+    float: right;
+    padding: 9px 20px;
+  }
+
+  &__addIcon {
+    color: inherit;
+    font-size: 16px;
+    display: inline-block;
+    margin: 2px 5px 0 0;
+    vertical-align: top;
+  }
+}

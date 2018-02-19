@@ -1,0 +1,15 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=latin-ext');
+@import "./assets/icon-font/style.css";
+
+@import "./assets/styles/scss/variables.scss";
+@import "./assets/styles/scss/reset.scss";
+@import "./assets/styles/scss/typography.scss";
+@import "./assets/styles/scss/buttons.scss";
+@import "./assets/styles/scss/select-icon.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
